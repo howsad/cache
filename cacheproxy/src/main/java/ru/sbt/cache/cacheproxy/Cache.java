@@ -12,9 +12,11 @@ import java.lang.annotation.Target;
 @Retention(value = RetentionPolicy.RUNTIME)
 public @interface Cache {
     CacheStorage storage() default CacheStorage.MEMORY;
-    String fileNamePrefix() default "data";
-    boolean zip() default false;
+    String fileNamePrefix() default "";
+    //True if parameter with that index has importance in checking for the cache, else otherwise.
+    //All omitted indexes are considered important.
     boolean[] identityBy() default {};
+
     //Negative values mean that storage is unlimited. Zero effectively denies the use of cache.
     int storageSize() default -1;
 }

@@ -5,5 +5,6 @@ package ru.sbt.cache.cacheproxy;
  */
 public enum CacheStorage {
     FILE,
-    MEMORY
+    MEMORY,
+    ZIP
 }

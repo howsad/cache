@@ -3,7 +3,6 @@ package ru.sbt.cache.cacheproxy;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.lang.reflect.Proxy;
-import java.nio.file.NoSuchFileException;
 
 /**
  * Created by Alexander Ushakov on 19.08.2016.
